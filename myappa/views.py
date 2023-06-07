@@ -12,7 +12,12 @@ from django.http import HttpResponse
 
 
 
-def counter(request) : 
-    words = request.GET['words']
-    amount_of_words = len(words.split())
-    return render(request, 'counter.html', {'amount' : amount_of_words})
+# def counter(request) : 
+#     words = request.POST['words']
+#     amount_of_words = len(words.split())
+#     return render(request, 'counter.html', {'amount' : amount_of_words}) 
+
+
+
+def register(request) :
+    return render(request, 'register.html')
